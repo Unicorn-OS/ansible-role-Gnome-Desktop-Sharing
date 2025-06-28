@@ -1,3 +1,2 @@
-#SPDX-License-Identifier: MIT-0
 ---
-# vars file for foo
+certificates_dir: "/home/{{ ansible_env.USER }}/.local/share/gnome-remote-desktop/certificates"
