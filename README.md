@@ -1,7 +1,11 @@
-Gnome Desktop Sharing
+Gnome Remote Desktop
 =========
 
-Enable Gnome Desktop Sharing, turning a node into a virtual cloud desktop. 
+Enable Gnome Remote Desktop, turning a node into a virtual cloud desktop.
+
+Options:
+1. Desktop Sharing
+2. Remote Login
 
 Requirements
 ------------
