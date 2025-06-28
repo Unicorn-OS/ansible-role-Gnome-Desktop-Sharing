@@ -1,0 +1,24 @@
+---
+- name: Enable Desktop Sharing
+  community.general.dconf:
+    key: "/org/gnome/desktop/remote-desktop/rdp/enable"
+    value: "true"
+    state: present
+
+- name: TLS Security Certificate
+  community.general.dconf:
+    key: "/org/gnome/desktop/remote-desktop/rdp/tls-cert"
+    value: "/home/{{ ansible_env.USER }}/.local/share/gnome-remote-desktop/certificates/rdp-tls.crt"
+    state: present
+
+- name: TLS Security Key
+  community.general.dconf:
+    key: "/org/gnome/desktop/remote-desktop/rdp/tls-key"
+    value: "/home/{{ ansible_env.USER }}/.local/share/gnome-remote-desktop/certificates/rdp-tls.key"
+    state: present
+
+- name: Remote Control
+  community.general.dconf:
+    key: "/org/gnome/desktop/remote-desktop/rdp/view-only"
+    value: "false"
+    state: present
