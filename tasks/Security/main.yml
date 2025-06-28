@@ -1,0 +1,5 @@
+- name: Key & Password
+  include_tasks: "{{ item }}.yml"
+  loop:
+  - Encryption
+  - Password

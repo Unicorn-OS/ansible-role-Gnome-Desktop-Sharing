@@ -1,7 +1,15 @@
 ---
-- name: sub tasks
-  include_tasks: "{{ item }}.yml" 
-  loop:
-  - Encryption Key
-  - Gsetting
-  - password
+- name: enable Desktop Sharing
+  include_tasks: Desktop Sharing/main.yml 
+  when: Desktop_Sharing
+
+- name: enable Remote Login
+  include_tasks: Remote Login/main.yml 
+  when: Remote_Login
+  
+- name: Security
+  include_tasks: Security/main.yml
+  
+
+
+

@@ -1,0 +1,7 @@
+---
+- name: sub tasks
+  include_tasks: "{{ item }}.yml" 
+  loop:
+  - Encryption Key
+  - Gsetting
+  - password
